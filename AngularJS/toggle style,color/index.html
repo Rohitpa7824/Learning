@@ -1,0 +1,24 @@
+<html ng-app='app'>
+	<body>
+		<style type="text/css">
+		.red{
+			color: red;
+		}
+		.yellow{
+			color: yellow;
+		}
+		.italics{
+			font-style: italic;
+		}
+		</style>
+		<div ng-controller="MainController">
+			<h1 ng-class="[style,color]">
+				This is a Test
+			</h1>
+			<button ng-click="changeColor()">Change color</button>
+			<button ng-click="changeStyle()">Change style</button>
+		</div>
+		<script type="text/javascript" src="src/angular.min.js"></script>
+		<script type="text/javascript" src="src/app.js"></script>
+	</body>
+</html>

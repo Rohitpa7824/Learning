@@ -1,0 +1,21 @@
+<html ng-app='app'>
+	<body>
+		<div ng-controller="MainController">
+		
+			<input ng-model="myfilter.str">
+			<div ng-repeat="user in mydata.arr | filter: myfilter.str">
+			{{user}}
+			</div>
+			<br>
+			<input ng-model="mfilter.name">
+			<div ng-repeat="user in newdata.arr | filter:mfilter | orderBy:'age' | limitTo: 3">
+				{{user}}
+			</div>
+			<br>
+			<input ng-model="mydata.str">
+			{{mydata.str|charlim}}
+		</div>
+		<script type="text/javascript" src="src/angular.min.js"></script>
+		<script type="text/javascript" src="src/app.js"></script>
+	</body>
+</html>

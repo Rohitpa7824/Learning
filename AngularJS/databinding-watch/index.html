@@ -1,0 +1,14 @@
+<html ng-app='app'>
+	<body>
+		
+		<div ng-controller="MainController">
+			
+		Name : <input type="text" ng-model="mydata.val"></input>
+		<h2>{{mydata.val}}</h2>
+
+		<span ng-show="mydata.toolong">NAME is TOO LONG </span>
+</div>
+		<script type="text/javascript" src="src/angular.min.js"></script>
+		<script type="text/javascript" src="src/app.js"></script>
+	</body>
+</html>

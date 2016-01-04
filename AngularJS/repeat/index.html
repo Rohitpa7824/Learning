@@ -1,0 +1,14 @@
+<html ng-app='app'>
+	<body>
+
+		<div ng-controller="MainController">
+			<div ng-repeat-start="num in myarr">
+				{{num}}:{{$index}}
+			</div>
+			<h2>hello</h2>
+			<h6 ng-repeat-end="num in myarr">bye</h6>
+		</div>
+		<script type="text/javascript" src="src/angular.min.js"></script>
+		<script type="text/javascript" src="src/app.js"></script>
+	</body>
+</html>
