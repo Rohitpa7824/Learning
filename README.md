@@ -1,2 +1,2 @@
 # Learning
-### The small Stuffs I make during learning new languages
+### This is my playground in which I play while learning new languages. 
